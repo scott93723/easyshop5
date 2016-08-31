@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private ListView listView;
-    private String[] list = {"TOMICA普通數字車", "TOMICA 絕版TEM", "TOMICA 幻走", "TOMICA DISNEY迪士尼", "TOMICA盒裝車"};
+    private String[] list = {"TOMICA數字車", "TOMICA 絕版TEM", "TOMICA 幻走", "TOMICA DISNEY迪士尼", "TOMICA盒裝車"};
     private ArrayAdapter<String> listAdapter;
 
     @Override
