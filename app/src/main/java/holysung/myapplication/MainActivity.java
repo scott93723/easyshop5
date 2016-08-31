@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity
             }
 
         if (id == R.id.action_search) {
-            Intent intent=new Intent(MainActivity.this,Benz_Activity.class);
+            Intent intent=new Intent(MainActivity.this,SearchActivity.class);
             startActivity(intent);
             return true;
         }
