@@ -18,7 +18,7 @@ public class SearchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_search);
         search = (SearchView) findViewById( R.id.search);
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         createlist();  // in this method, Create a list of items.
