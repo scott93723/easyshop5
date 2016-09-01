@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "592133179076",
+    "firebase_url": "https://shop-c0175.firebaseio.com",
+    "project_id": "shop-c0175",
+    "storage_bucket": "shop-c0175.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592133179076:android:f7420bda03b1897c",
+        "android_client_info": {
+          "package_name": "com.holysung.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592133179076-ts83gpnchsf6m86s49q016g6g27t47j6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.holysung.myapplication",
+            "certificate_hash": "93AD455254309FB9AB6AB41CB26198120B0B591E"
+          }
+        },
+        {
+          "client_id": "592133179076-fobrj14dbni1nhfbago2fv84ipvm9uv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG4bvq3VoWTpCO4Mv7b-Wf8bC8YNKowOo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592133179076-fobrj14dbni1nhfbago2fv84ipvm9uv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

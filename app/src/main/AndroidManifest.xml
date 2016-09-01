@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="holysung.myapplication">
+    package="holysung.myapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +21,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SmallCar_Activity" />
-
         <activity android:name=".Tomica_TEM_Activity" />
         <activity android:name=".Tomica_Disney_Activity" />
         <activity android:name=".Tomica_Fatasy_Activity" />
@@ -33,7 +34,7 @@
         <activity android:name=".Login_Activity" />
         <activity android:name=".Cart_Activity" />
         <activity android:name=".Regist_Activity" />
-        <activity android:name=".Vip_Activity"></activity>
+        <activity android:name=".Vip_Activity" />
     </application>
 
 </manifest>
