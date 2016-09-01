@@ -13,7 +13,7 @@
         android:src="@drawable/benz" />
 
     <TextView
-        android:id="@+id/txv_brand"
+        android:id="@+id/benz_txv_brand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

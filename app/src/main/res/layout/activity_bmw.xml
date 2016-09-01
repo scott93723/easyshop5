@@ -21,26 +21,41 @@
         android:src="@drawable/bmw"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="數量:"
+        android:textSize="30sp"
+        android:id="@+id/textView12" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/bmw_edit_count" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="30sp"
-        android:text="加入購物車"
-        android:id="@+id/bmw_btn_cart" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="加入購物車"
+            android:id="@+id/bmw_btn_cart" />
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="結帳"
-        android:layout_weight="1"
-        android:textSize="30sp"
-        android:id="@+id/btn_chech" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="結帳"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:id="@+id/btn_chech" />
 
     </LinearLayout>
 </LinearLayout>

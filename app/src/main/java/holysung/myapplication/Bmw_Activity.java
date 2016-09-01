@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,37 +14,29 @@ public class Bmw_Activity extends AppCompatActivity {
     private Button btn_chech;
     private Button btn_cart;
     private TextView bmw_txv_brand;
+    private EditText bmw_edit_count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmw);
-
-   //     Toast.makeText(this,"BMW",Toast.LENGTH_LONG).show();
-
+        //     Toast.makeText(this,"BMW",Toast.LENGTH_LONG).show();
         findview();
-
-
-
         btn_cart.setOnClickListener(new Button.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                String s=bmw_txv_brand.getText().toString();
-                Intent intent=new Intent(Bmw_Activity.this,Cart_Activity.class);
-                intent.putExtra("name",s);
+            public void onClick(View view) {   String brand = bmw_txv_brand.getText().toString();
+                Intent intent = new Intent(Bmw_Activity.this, Cart_Activity.class);
+                intent.putExtra("name", brand);
+                intent.putExtra("count", bmw_edit_count.getText().toString());
                 startActivity(intent);
-
 
             }
         });
-
-
         btn_chech.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Bmw_Activity.this,Shopping_Activity.class);
+                Intent intent = new Intent(Bmw_Activity.this, Shopping_Activity.class);
                 startActivity(intent);
-
             }
         });
 
@@ -54,5 +47,6 @@ public class Bmw_Activity extends AppCompatActivity {
         btn_chech = (Button) findViewById(R.id.btn_chech);
         btn_cart = (Button) findViewById(R.id.bmw_btn_cart);
         bmw_txv_brand = (TextView) findViewById(R.id.bmw_txv_brand);
+        bmw_edit_count = (EditText) findViewById(R.id.bmw_edit_count);
     }
 }

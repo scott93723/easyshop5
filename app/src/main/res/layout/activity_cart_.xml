@@ -34,22 +34,21 @@
             android:textSize="30sp"
             android:id="@+id/textView5" />
 
-
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/cart_number"
-            android:singleLine="true"
-         />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:textSize="30sp"
+            android:id="@+id/cart_txv_count" />
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="買了甚麼車:"
+            android:text="清單:"
             android:id="@+id/textView11" />
 
         <TextView

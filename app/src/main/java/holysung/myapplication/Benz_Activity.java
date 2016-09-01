@@ -10,29 +10,35 @@ import android.widget.TextView;
 
 import java.util.Objects;
 public class Benz_Activity extends AppCompatActivity {
-    private Button btn_check;
+
     private Button benz_btn_cart;
-    private Button benz_btn_shop;
+    private TextView benz_txv_brand;
     private EditText benz_edit_count;
-    private TextView txv_brand;
+    private Button benz_btn_shop;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_benz_);
-        findview();
+
+        benz_btn_cart = (Button) findViewById(R.id.benz_btn_cart);
+        benz_txv_brand = (TextView) findViewById(R.id.benz_txv_brand);
+        benz_edit_count = (EditText) findViewById(R.id.benz_edit_count);
+        benz_btn_shop = (Button) findViewById(R.id.benz_btn_shop);
+
         benz_btn_cart.setOnClickListener(new Button.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                String s = txv_brand.getText().toString();
+            public void onClick(View view) {
+                String brand = benz_txv_brand.getText().toString();
                 Intent intent = new Intent(Benz_Activity.this, Cart_Activity.class);
-                intent.putExtra("name", s);
+                intent.putExtra("name", brand);
+                intent.putExtra("count", benz_edit_count.getText().toString());
                 startActivity(intent);
             }
-
         });
 
 
-        benz_btn_shop.setOnClickListener(new View.OnClickListener() {
+        benz_btn_shop.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Benz_Activity.this, Shopping_Activity.class);
@@ -40,12 +46,7 @@ public class Benz_Activity extends AppCompatActivity {
             }
         });
 
+
     }
 
-
-    private void findview() {
-        txv_brand = (TextView) findViewById(R.id.txv_brand);
-        benz_btn_cart = (Button) findViewById(R.id.benz_btn_cart);
-        benz_btn_shop = (Button) findViewById(R.id.benz_btn_shop);
-    }
 }
